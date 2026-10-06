@@ -39,6 +39,62 @@ body {
   margin-top: 28px;
 }
 
+.favourites {
+  margin-top: 28px;
+  padding: 20px;
+  border: 1px solid #333842;
+  border-radius: 10px;
+  background: #191c22;
+}
+
+.favourites-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.favourites-header h2 {
+  margin: 0 0 4px;
+}
+
+.favourites-header p {
+  margin: 0;
+  opacity: 0.7;
+}
+
+.favourite-button {
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 14px;
+  color: #101318;
+  background: #f5c451;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.favourite-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.favourite-error {
+  color: #ff8585;
+}
+
+.favourite-success {
+  color: #8de0a1;
+}
+
+@media (max-width: 520px) {
+  .favourites-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
 .history h2 {
   margin-bottom: 16px;
   text-align: center;
