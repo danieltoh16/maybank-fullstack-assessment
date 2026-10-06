@@ -17,7 +17,13 @@ function App() {
 
   const handleSaveFavourite = () => {
     if (selectedPlace) {
-      dispatch(saveFavourite(selectedPlace));
+      dispatch(saveFavourite({
+        placeId: selectedPlace.placeId,
+        name: selectedPlace.name,
+        address: selectedPlace.address,
+        latitude: selectedPlace.location.lat,
+        longitude: selectedPlace.location.lng,
+      }));
     }
   };
 
