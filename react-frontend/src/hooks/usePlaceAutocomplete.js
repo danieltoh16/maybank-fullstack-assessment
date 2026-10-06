@@ -31,6 +31,7 @@ function usePlaceAutocomplete(onPlaceSelected) {
         }
 
         onPlaceSelected({
+          placeId: place.id,
           name: place.displayName,
           address: place.formattedAddress,
           location: {
